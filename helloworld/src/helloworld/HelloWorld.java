@@ -1,5 +1,5 @@
 package helloworld;
-public class Helloworld {
+public class HelloWorld {
 	/*
 	 * ���������� �ּ�ó���Ҷ� ����մϴ�. �ۼ���: �ڱԸ� 01.21
 	 */

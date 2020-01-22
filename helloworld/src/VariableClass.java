@@ -1,4 +1,4 @@
-																										
+						//int형 데이터 타입																				
 public class VariableClass {
 	public static void main(String[] args) {
 	
