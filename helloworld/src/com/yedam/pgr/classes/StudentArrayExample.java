@@ -1,6 +1,17 @@
 package com.yedam.pgr.classes;
 
 public class StudentArrayExample {
+	static Student[]  stdAry = new Student[3];
+	
+	public static Student getStudent(String name) {
+		Student st1 = null;
+		for (int i = 0; i < stdAry.length; i++) {
+			if (stdAry[i].name.equals("kong"))
+			System.out.println(stdAry[i].getName() + " " + stdAry[i].getAge());
+	}
+
+}
+
 	public static void main(String[] args) {
 
 		Student[] stdAry = new Student[3];
@@ -29,14 +40,11 @@ public class StudentArrayExample {
 		stdAry[1] = stdAry[1];
 		stdAry[2] = stdAry[0];
 
-		for (int i = 0; i < stdAry.length; i++) {
-//			if (stdAry[i].name.equals("kong"))
-			System.out.println(stdAry[i].getName + " " + stdAry[i].getAge());
-
-			
-			
+//		for (int i = 0; i < stdAry.length; i++) {
+////			if (stdAry[i].name.equals("kong"))
+//			System.out.println(stdAry[i].getName() + " " + stdAry[i].getAge());
+//	}
+		Student
 		}
 	
 	}
-
-}
