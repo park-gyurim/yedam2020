@@ -16,7 +16,7 @@ public class EmpProc {
 		System.out.println("프로그램 시작");
 		while (true) {
 			System.out.println("==============================");
-			System.out.println("1.추가 2. 조회 3. 리스트 4.삭제 5. 종료");
+			System.out.println("1.추가 2. 조회 3. 리스트 4.삭제 5. 종료  6.디비조회");
 			System.out.println("==============================");
 			System.out.println("선택>");
 			int menu = scn.nextInt();
@@ -43,7 +43,10 @@ public class EmpProc {
 				service.delEmp(no, employees);
 			} else if (menu == 5) {
 				break;
+			}else if (menu == 6) {
+				service.searchEmployees();
 			}
+				
 		}
 		System.out.println("프로그램 종료");
 	}
