@@ -23,5 +23,9 @@ public class DAO {
 				}
 		return conn;
 	}
+	public static void close(Connection conn) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
