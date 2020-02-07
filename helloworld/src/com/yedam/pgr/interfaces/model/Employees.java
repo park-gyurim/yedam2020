@@ -1,7 +1,7 @@
 package com.yedam.pgr.interfaces.model;
 
 public class Employees {
-	int employeeID;
+	int employeeId;
 	String firstName;
 	String lastName;
 	String email;
@@ -10,12 +10,12 @@ public class Employees {
 	String jobId;
 	int salary;
 
-	public int getEmployeeID() {
-		return employeeID;
+	public int getEmployeeId() {
+		return employeeId;
 	}
 
-	public void setEmployeeID(int employeeID) {
-		this.employeeID = employeeID;
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
 	}
 
 	public String getFirstName() {
@@ -76,19 +76,9 @@ public class Employees {
 
 	@Override
 	public String toString() {
-		return "Employees [employeeID=" + employeeID + ", firstName=" + firstName + ", lastName=" + lastName
+		return "Employees [employeeId=" + employeeId + ", firstName=" + firstName + ", lastName=" + lastName
 				+ ", email=" + email + ", phoneNumber=" + phoneNumber + ", hireDate=" + hireDate + ", jobId=" + jobId
 				+ ", salary=" + salary + "]";
-	}
-
-	public void setEmployeeId(int empId) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public int getEmployeeId() {
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 }

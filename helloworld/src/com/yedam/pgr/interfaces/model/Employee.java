@@ -1,16 +1,13 @@
 package com.yedam.pgr.interfaces.model;
 
 public class Employee {
-	
 	String name;
-	int empNO;
+	int empNo;
 	int salary;
-	
-	
-	public Employee(String name, int empNO, int salary) {
+	public Employee(String name, int empNo, int salary) {
 		super();
 		this.name = name;
-		this.empNO = empNO;
+		this.empNo = empNo;
 		this.salary = salary;
 	}
 	public String getName() {
@@ -19,11 +16,11 @@ public class Employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getEmpNO() {
-		return empNO;
+	public int getEmpNo() {
+		return empNo;
 	}
-	public void setEmpNO(int empNO) {
-		this.empNO = empNO;
+	public void setEmpNo(int empNo) {
+		this.empNo = empNo;
 	}
 	public int getSalary() {
 		return salary;
@@ -33,9 +30,6 @@ public class Employee {
 	}
 	@Override
 	public String toString() {
-		return "Employees [name=" + name + ", empNO=" + empNO + ", salary=" + salary + "]";
+		return "Employee [name=" + name + ", empNo=" + empNo + ", salary=" + salary + "]";
 	}
-	
-	
-
 }

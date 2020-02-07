@@ -7,9 +7,6 @@ import com.yedam.pgr.interfaces.model.Employee;
 import com.yedam.pgr.interfaces.model.Employees;
 
 public class EmpServiceImpl implements EmpService {
-	public static void main(String[] args) {
-
-	}
 
 	@Override
 	public void addEmp(Employee emp, Employee[] emps) {
@@ -26,6 +23,12 @@ public class EmpServiceImpl implements EmpService {
 	@Override
 	public void searchEmp(int empNo, Employee[] emps) {
 		System.out.println("조회기능");
+		for (Employee emp : emps) {
+			if (emp != null && emp.getEmpNo() == empNo) {
+				System.out.println(emp);
+			}
+		}
+
 	}
 
 	@Override
@@ -42,7 +45,7 @@ public class EmpServiceImpl implements EmpService {
 	public void delEmp(int empNo, Employee[] emps) {
 //      System.out.println("삭제기능");
 		for (int i = 0; i < emps.length; i++) {
-			if (emps[i] != null && emps[i].getEmpNO() == empNo) {
+			if (emps[i] != null && emps[i].getEmpNo() == empNo) {
 				emps[i] = null;
 			}
 		}
@@ -76,11 +79,9 @@ public class EmpServiceImpl implements EmpService {
 
 	@Override
 	public Employees getDBEmployee(int empId) {
-	    EmpDAO dao = new EmpDAO();
+		EmpDAO dao = new EmpDAO();
 		return dao.getEmployee(empId);
 	}
-
-
 
 	@Override
 	public void insertDBEmp(Employees emp) {
@@ -94,10 +95,5 @@ public class EmpServiceImpl implements EmpService {
 		dao.updateEmployees(emp);
 	}
 
-	@Override
-	public void deleteDBEmp(Employees emp) {
-		// TODO Auto-generated method stub
-
-	}
 
 }
